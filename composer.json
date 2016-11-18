@@ -10,6 +10,7 @@
   "keywords": ["console", "php", "ace editor", "run code"],
   "license": "MIT",
   "minimum-stability": "stable",
+  "target-dir": "ConsoleBundle",
   "require": {
     "php": "^5.5.9 || ^7.0",
     "symfony/framework-bundle": "^3.0"
