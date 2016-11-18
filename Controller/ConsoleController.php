@@ -20,7 +20,7 @@ class ConsoleController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('JPConsoleBundle:Console:index.html.twig');
+        return $this->render('ConsoleBundle:Console:index.html.twig');
     }
 
     /**
@@ -50,9 +50,9 @@ class ConsoleController extends Controller
             ob_start();
             eval($this->stripPhpTag($codeRun->code));
             $dataResponse = ob_get_clean();
-            $dataResponse = $twig->render('@JPConsole/Console/base.html.twig', array('body' => $dataResponse));
+            $dataResponse = $twig->render('@Console/Console/base.html.twig', array('body' => $dataResponse));
         } catch (\Exception $exception) {
-            $dataResponse = $twig->render('@JPConsole/Console/exception.html.twig', array('exception' => $exception));
+            $dataResponse = $twig->render('@Console/Console/exception.html.twig', array('exception' => $exception));
         }
 
         return new Response($dataResponse);
@@ -66,7 +66,7 @@ class ConsoleController extends Controller
     private function dump($var)
     {
         $twig = $this->get('twig');
-        echo $twig->render('@JPConsole/Console/dump.html.twig', ['var' => $var]);
+        echo $twig->render('@Console/Console/dump.html.twig', ['var' => $var]);
     }
 
     /**

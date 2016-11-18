@@ -20,7 +20,7 @@ class AppKernel extends Kernel
         $bundles = [
             ...
             
-            new JP\ConsoleBundle\JPConsoleBundle(),
+            new jonkiszp\ConsoleBundle\ConsoleBundle(),
             
             ...
         ];
@@ -31,7 +31,7 @@ oraz do pliku app/config/routing.yml dodać poniższy wpis
 
 ```yml
 jp_console:
-    resource: "@JPConsoleBundle/Resources/config/routing.xml"
+    resource: "@ConsoleBundle/Resources/config/routing.xml"
     prefix: /
     
 ```
