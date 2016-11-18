@@ -8,7 +8,7 @@
         <service id="data_collector.console_collector" class="jonkiszp\ConsoleBundle\DataCollector\ConsoleCollector" public="false">
             <tag name="data_collector" template="ConsoleBundle:Profiler:console-collector.html.twig" id="console_collector" />
         </service>
-        <service id="jp_console.hint_file_finder" class="jonkiszp\ConsoleBundle\Finder\HintFileFinder">
+        <service id="jonkiszp_console.hint_file_finder" class="jonkiszp\ConsoleBundle\Finder\HintFileFinder">
             <argument>%kernel.root_dir%/../</argument>
             <argument type="collection">
                 <argument>var</argument>

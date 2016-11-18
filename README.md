@@ -30,7 +30,7 @@ class AppKernel extends Kernel
 oraz do pliku app/config/routing.yml dodać poniższy wpis
 
 ```yml
-jp_console:
+jonkiszp_console:
     resource: "@ConsoleBundle/Resources/config/routing.xml"
     prefix: /
     

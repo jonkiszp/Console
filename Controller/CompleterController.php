@@ -24,7 +24,7 @@ class CompleterController extends Controller
     {
         $hintCollection = new HintCollection();
         $this->getHintInDeclaredObject($hintCollection);
-        $hintFileFinder = $this->get('jp_console.hint_file_finder');
+        $hintFileFinder = $this->get('jonkiszp_console.hint_file_finder');
         $hintCollection->merge($hintFileFinder->getHintsFromFolder());
 
         $serializer = new Serializer([new ObjectNormalizer()], array(new JsonEncoder()));
