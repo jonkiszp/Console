@@ -1,6 +1,6 @@
 <?php
 
-namespace JP\ConsoleBundle\Controller;
+namespace jonkiszp\ConsoleBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -10,7 +10,7 @@ use Symfony\Component\Serializer\Encoder\JsonDecode;
 /**
  * Kontroler odpowiedzialny za obslugę konsoli
  * Class ConsoleController
- * @package JP\ConsoleBundle\Controller
+ * @package jonkiszp\ConsoleBundle\Controller
  */
 class ConsoleController extends Controller
 {

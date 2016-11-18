@@ -1,10 +1,10 @@
 <?php
 
-namespace JP\ConsoleBundle\Model;
+namespace jonkiszp\ConsoleBundle\Model;
 
 /**
  * Klasa reprezentująca podpowiedź
- * @package JP\ConsoleBundle\Model
+ * @package jonkiszp\ConsoleBundle\Model
  */
 class Hint
 {

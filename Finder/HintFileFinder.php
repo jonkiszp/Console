@@ -1,15 +1,15 @@
 <?php
 
-namespace JP\ConsoleBundle\Finder;
+namespace jonkiszp\ConsoleBundle\Finder;
 
-use JP\ConsoleBundle\Model\Hint;
-use JP\ConsoleBundle\Model\HintCollection;
+use jonkiszp\ConsoleBundle\Model\Hint;
+use jonkiszp\ConsoleBundle\Model\HintCollection;
 use Symfony\Component\Finder\Finder;
 
 /**
  * Klasa odpowiedzialna za wyszukiwanie obiektów i ich przestrzeni nazw
  * Class ObjectFinder
- * @package JP\ConsoleBundle\Finder
+ * @package jonkiszp\ConsoleBundle\Finder
  */
 class HintFileFinder
 {

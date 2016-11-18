@@ -5,10 +5,10 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="data_collector.console_collector" class="JP\ConsoleBundle\DataCollector\ConsoleCollector" public="false">
+        <service id="data_collector.console_collector" class="jonkiszp\ConsoleBundle\DataCollector\ConsoleCollector" public="false">
             <tag name="data_collector" template="JPConsoleBundle:Profiler:console-collector.html.twig" id="console_collector" /> 
         </service>
-        <service id="jp_console.hint_file_finder" class="JP\ConsoleBundle\Finder\HintFileFinder">
+        <service id="jp_console.hint_file_finder" class="jonkiszp\ConsoleBundle\Finder\HintFileFinder">
             <argument>%kernel.root_dir%/../</argument>
             <argument type="collection">
                 <argument>var</argument>

@@ -5,12 +5,12 @@
         http://symfony.com/schema/routing/routing-1.0.xsd">
 
     <route id="console" path="/_console" methods="get">
-        <default key="_controller">JPConsoleBundle:Console:index</default>
+        <default key="_controller">ConsoleBundle:Console:index</default>
     </route>
     <route id="console_run" path="/_console/{type}" methods="post">
-        <default key="_controller">JPConsoleBundle:Console:run</default>
+        <default key="_controller">ConsoleBundle:Console:run</default>
     </route>
     <route id="completer" path="/_console/completer">
-        <default key="_controller">JPConsoleBundle:Completer:find</default>
+        <default key="_controller">ConsoleBundle:Completer:find</default>
     </route>
 </routes>

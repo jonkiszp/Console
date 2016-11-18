@@ -1,5 +1,5 @@
 <?php
-namespace JP\ConsoleBundle\DataCollector;
+namespace jonkiszp\ConsoleBundle\DataCollector;
 
 use Symfony\Component\HttpKernel\DataCollector\DataCollector;
 use Symfony\Component\HttpFoundation\Request;

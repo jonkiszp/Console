@@ -1,13 +1,13 @@
-{% extends '@JPConsole/Console/base.html.twig' %}
+{% extends '@Console/Console/base.html.twig' %}
 
 {% block javascripts %}
-    <script src="{{ asset('bundles/jpconsole/js/jquery-3.1.1.min.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/dexie.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/ace/ace.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/ace/ext-modelist.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/ace/ext-keybinding_menu.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/ace/ext-language_tools.js') }}"></script>
-    <script src="{{ asset('bundles/jpconsole/js/ace/worker-php.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/jquery-3.1.1.min.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/dexie.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/ace/ace.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/ace/ext-modelist.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/ace/ext-keybinding_menu.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/ace/ext-language_tools.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/ace/worker-php.js') }}"></script>
 {% endblock %}
 
 {% block body %}
@@ -15,5 +15,5 @@
     <div id="loader"></div>
     <iframe id="response" class="right-container">
     </iframe>
-    <script src="{{ asset('bundles/jpconsole/js/console.js') }}"></script>
+    <script src="{{ asset('bundles/console/js/console.js') }}"></script>
 {% endblock %}

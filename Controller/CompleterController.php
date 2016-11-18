@@ -1,9 +1,8 @@
 <?php
-namespace JP\ConsoleBundle\Controller;
+namespace jonkiszp\ConsoleBundle\Controller;
 
-use JP\ConsoleBundle\Finder\HintFileFinder;
-use JP\ConsoleBundle\Model\Hint;
-use JP\ConsoleBundle\Model\HintCollection;
+use jonkiszp\ConsoleBundle\Model\Hint;
+use jonkiszp\ConsoleBundle\Model\HintCollection;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\Encoder\JsonEncoder;
@@ -13,7 +12,7 @@ use Symfony\Component\Serializer\Serializer;
 /**
  * Kontroler odpowiedzialny za podpowiedź składni
  * Class CompleterController
- * @package JP\ConsoleBundle\Controller
+ * @package jonkiszp\ConsoleBundle\Controller
  */
 class CompleterController extends Controller
 {
