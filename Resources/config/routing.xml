@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns="http://symfony.com/schema/routing"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://symfony.com/schema/routing
+        http://symfony.com/schema/routing/routing-1.0.xsd">
+
+    <route id="console" path="/_console" methods="get">
+        <default key="_controller">JPConsoleBundle:Console:index</default>
+    </route>
+    <route id="console_run" path="/_console/{type}" methods="post">
+        <default key="_controller">JPConsoleBundle:Console:run</default>
+    </route>
+    <route id="completer" path="/_console/completer">
+        <default key="_controller">JPConsoleBundle:Completer:find</default>
+    </route>
+</routes>

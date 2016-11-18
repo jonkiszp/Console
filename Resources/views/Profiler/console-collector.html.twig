@@ -1,0 +1,31 @@
+{% extends 'WebProfilerBundle:Profiler:layout.html.twig' %}
+
+{% block toolbar %}
+    {% set icon %}
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACWElEQVR42u2bMWsUQRiGn285DotwhGARRIK1+gskCIKSgGAjQSVdakvFX2AnsdDGKqVIGhsRDYhI9AeE2AgqhJgmjR5XnOHwtbhFwjrHuu4ed7vzveXM7rDvs9/MfDO7Ay6XK2bZqApJbWAGSGru8RfQM7OjXACSOsBt4AZwvgHmj0PYBZ4Bj82s+xcASReBp8Cphkf9AXDLzN79ASBpEdgCTkTS9fvAFTPbNkkzwEdgIbLxbw84lwBrEZon9byWACsRz4IrJukH0IkUQNckKeZEKCFyOQAHELlagbLvwNWG+n0BzOYBGJjZhya6lzTwLuAAHIADcAA5s8CoEbQF3ATagerXZrbfaABmNpDUY7ivloXwRdIlM9ur49yY1WHO9dck/Qzc91nSwpR7Pcw+dGEAdYZQGYAcCF+nFUKlAOoIoXIAdYMwFgB1gjA2AHWBEAJQZSb4FvgUKD8DLDcmDxjRRkfSe4V1p+mDYC3MjwLQKtlgB3gJXAhU3zWzBzn3tyn+Uebo+OftiXWBMm8+jbz7IwbNf9GWpLlJpsKlwl7SZZXXo4nMAmXDPtXZCoK3ijaKbYhUZB7gDTAo+eyvJrEh8hA4GZjvn5jZeoG9hV1J14F7aXtF1AeeA+sTHQTrqHFngrWUA3AADsABOAAH4ACigZKECrJr61lJ8w3MAufJ/B4DdBNgJwBl43/W21Nsfg7YCETATgvYBBYzFcvAN0n7DA8b1D3sTxM+CrDpv8ubWQ9YTZeZsagPrJpZL0nX59vAEsPjJE3XAbCUevZDU9Efm3O5XHHrNxj/TwHIYSLJAAAAAElFTkSuQmCC" alt="">
+    {% endset %}
+    <div class="sf-toolbar-block sf-toolbar-block-console sf-toolbar-block-normal sf-toolbar-status-normal">
+        <a href="{{ url('console') }}">
+            <div class="sf-toolbar-icon">
+                {{ icon|default('') }}
+            </div>
+        </a>
+        <div class="sf-toolbar-info"></div>
+    </div>
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block menu %}
+    <span class="label">
+        <span class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAACWElEQVR42u2bMWsUQRiGn285DotwhGARRIK1+gskCIKSgGAjQSVdakvFX2AnsdDGKqVIGhsRDYhI9AeE2AgqhJgmjR5XnOHwtbhFwjrHuu4ed7vzveXM7rDvs9/MfDO7Ay6XK2bZqApJbWAGSGru8RfQM7OjXACSOsBt4AZwvgHmj0PYBZ4Bj82s+xcASReBp8Cphkf9AXDLzN79ASBpEdgCTkTS9fvAFTPbNkkzwEdgIbLxbw84lwBrEZon9byWACsRz4IrJukH0IkUQNckKeZEKCFyOQAHELlagbLvwNWG+n0BzOYBGJjZhya6lzTwLuAAHIADcAA5s8CoEbQF3ATagerXZrbfaABmNpDUY7ivloXwRdIlM9ur49yY1WHO9dck/Qzc91nSwpR7Pcw+dGEAdYZQGYAcCF+nFUKlAOoIoXIAdYMwFgB1gjA2AHWBEAJQZSb4FvgUKD8DLDcmDxjRRkfSe4V1p+mDYC3MjwLQKtlgB3gJXAhU3zWzBzn3tyn+Uebo+OftiXWBMm8+jbz7IwbNf9GWpLlJpsKlwl7SZZXXo4nMAmXDPtXZCoK3ijaKbYhUZB7gDTAo+eyvJrEh8hA4GZjvn5jZeoG9hV1J14F7aXtF1AeeA+sTHQTrqHFngrWUA3AADsABOAAH4ACigZKECrJr61lJ8w3MAufJ/B4DdBNgJwBl43/W21Nsfg7YCETATgvYBBYzFcvAN0n7DA8b1D3sTxM+CrDpv8ubWQ9YTZeZsagPrJpZL0nX59vAEsPjJE3XAbCUevZDU9Efm3O5XHHrNxj/TwHIYSLJAAAAAElFTkSuQmCC" alt="">
+        </span>
+        <strong>Console</strong>
+    </span>
+{% endblock %}
+
+{% block panel %}
+{% endblock %}
