@@ -1,5 +1,5 @@
 {
-  "name" : "jonkiszp/Console",
+  "name" : "jonkiszp/console-bundle",
   "description": "JPConsole jest Konsolą PHP która pozwala pisać oraz uruchamiać kod.",
   "type": "symfony-bundle",
   "authors": [{
