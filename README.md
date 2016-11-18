@@ -10,6 +10,10 @@ JPConsole jest Konsolą PHP która pozwala pisać oraz uruchamiać kod.
 Instalacja:
 -----------
 
+```sh
+composer require jonkiszp/console-bundle
+```
+
 Aby uruchomić konsole należy dodać do pliku app/AppKernel.php  następujący kod ```new JP\ConsoleBundle\JPConsoleBundle(),``` jak na przykładzie poniżej.
 
 ```php
