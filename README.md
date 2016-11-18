@@ -1,7 +1,7 @@
 JPConsole
 =========
 
-JPConsole jest Konsolą PHP która pozwala pisać oraz uruchamiać kod
+JPConsole jest Konsolą PHP która pozwala pisać oraz uruchamiać kod.
 
 **Version:** 0.1 alpha
 
