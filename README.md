@@ -39,3 +39,9 @@ jonkiszp_console:
     prefix: /
     
 ```
+
+Przydatne skróty klawiszowe
+
+Ctrl+Alt+H wyświetlenie wszystkich skrótów klawiszowych ###
+Ctrl+R     załadowanie podpowiedzi z plików znajdujących się w systemie.
+Ctrl+Enter uruchomienie napisanego kodu
