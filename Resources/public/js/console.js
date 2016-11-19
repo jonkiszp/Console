@@ -103,14 +103,24 @@ function Console(element, db) {
     this.setShortcut = function () {
         // uruchamia napisany kod
         self.commands.addCommands([{
-            name: 'Execute',
+            name: 'executeCode',
             bindKey: {win: 'Ctrl-Enter', mac: 'Command-Enter'},
             exec: this.runCode,
             readOnly: true
         },{
-            name: 'Load hint',
+            name: 'loadHint',
             bindKey: {win: 'Alt-R', mac: 'Command-R'},
             exec: this.loadHint,
+            readOnly: true
+        },{
+            name: 'showKeyboardShortcuts',
+            bindKey: {win: 'Ctrl-Alt-h', mac: 'Command-Alt-h'},
+            exec: function (editor) {
+                ace.config.loadModule('ace/ext/keybinding_menu', function (module) {
+                    module.init(editor);
+                    editor.showKeyboardShortcuts();
+                });
+            },
             readOnly: true
         }]);
     };

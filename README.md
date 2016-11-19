@@ -11,7 +11,7 @@ Instalacja:
 -----------
 
 ```sh
-composer require jonkiszp/console-bundle
+composer require jonkiszp/console-bundle:master-dev
 ```
 
 Aby uruchomić konsole należy dodać do pliku app/AppKernel.php  następujący kod ```new JP\ConsoleBundle\JPConsoleBundle(),``` jak na przykładzie poniżej.
