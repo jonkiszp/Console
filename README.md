@@ -42,6 +42,6 @@ jonkiszp_console:
 
 Przydatne skróty klawiszowe
 
-Ctrl+Alt+H wyświetlenie wszystkich skrótów klawiszowych ###
-Ctrl+R     załadowanie podpowiedzi z plików znajdujących się w systemie.
+Ctrl+Alt+H wyświetlenie wszystkich skrótów klawiszowych.<br/>
+Alt+R     załadowanie podpowiedzi z plików znajdujących się w systemie.<br/>
 Ctrl+Enter uruchomienie napisanego kodu
